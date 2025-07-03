@@ -521,3 +521,28 @@ window.addEventListener('pointerup', function (e) {
     flipPrev();
 
 });
+
+const DELTATHRESHOLDTOUCH = 30; // pixels for touch
+let touchStartY = 0;
+let touchStartX = 0;
+
+window.addEventListener('touchstart', (e) => {
+  touchStartY = e.touches[0].clientY;
+  touchStartX = e.touches[0].clientX;
+});
+
+window.addEventListener('touchend', (e) => {
+  const touchEndY = e.changedTouches[0].clientY;
+  const touchEndX = e.changedTouches[0].clientX;
+  const deltaY = touchStartY - touchEndY;
+  const deltaX = touchStartX - touchEndX;
+
+  if (isAnimating) return;
+
+  if (deltaX > -deltaY && secId < SECTIONS.length - 1) {
+    flipNext();
+  }
+  if (deltaX < -deltaY && secId > 0) {
+    flipPrev();
+  }
+});
