@@ -200,13 +200,14 @@ logo3.addEventListener("mouseleave", () => {
   gsap.to(logo3, { rotate: 0, scale: 1, duration: 0.4, ease: "power1.out" });
 });
 
-const logo8 = document.querySelector("img[alt='Just Say Banana Logo4']");
-logo8.addEventListener("mouseenter", () => {
-  gsap.to(logo8, { rotate: -5, scale: 1.1, duration: 0.4, ease: "power1.out" });
+const logo4 = document.querySelector("img[alt='Just Say Banana Logo4']");
+logo4.addEventListener("mouseenter", () => {
+  gsap.to(logo4, { rotate: -5, scale: 1.1, duration: 0.4, ease: "power1.out" });
 });
-logo8.addEventListener("mouseleave", () => {
-  gsap.to(logo8, { rotate: 0, scale: 1, duration: 0.4, ease: "power1.out" });
+logo4.addEventListener("mouseleave", () => {
+  gsap.to(logo4, { rotate: 0, scale: 1, duration: 0.4, ease: "power1.out" });
 });
+
 
 const logo5 = document.querySelector("img[alt='Just Say Banana Logo5']");
 logo5.addEventListener("mouseenter", () => {
