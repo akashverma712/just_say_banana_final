@@ -226,73 +226,81 @@
 
 
     <!-- SECTION 4-->
-    <div id="section4" class="section">
-      <div class="peel"></div>
-      <div
-        class="w-full h-screen flex flex-col md:flex-row bg-yellow-300 font-['Gloria_Hallelujah'] relative overflow-hidden"
-        id="animated-section">
-    
-        <!-- Top Star -->
-        <img src="images/star.png" alt="Star Top" class="absolute top-[2%] left-[2%] w-[20px] sm:w-[28px] z-20" />
-    
-        <!-- Just Say Banana Logo - PUSHED HIGHER -->
-        <img id="logo4"
-        src="images/just_say_banana.png"
-        alt="Just Say Banana Logo4"
-        class="absolute top-[0.1%] left-[3%] sm:top-0 sm:left-6 w-[140px] sm:w-[180px] md:w-[200px] h-auto logo  pointer-events-auto" />
-      
+ <div id="section4" class="section">
+  <div class="peel"></div>
+  <div
+    class="w-full h-screen flex flex-col md:flex-row bg-yellow-300 font-['Gloria_Hallelujah'] relative overflow-hidden"
+    id="animated-section">
+
+    <!-- Top Star -->
+    <img src="images/star.png" alt="Star Top" class="absolute top-[2%] left-[2%] w-[20px] sm:w-[28px] z-20" />
+
+    <!-- Logo -->
+    <img id="logo4"
+      src="images/just_say_banana.png"
+      alt="Just Say Banana Logo4"
+      class="absolute top-[0.1%] left-[3%] sm:top-0 sm:left-6 w-[140px] sm:w-[180px] md:w-[200px] h-auto logo pointer-events-auto" />
+
+    <!-- Text Content -->
+    <div
+      class="w-full md:w-1/2 flex-1 pt-24 sm:pt-28 md:pt-32 px-5 sm:px-8 md:px-12 pb-10 text-[#FF499C] flex flex-col justify-center z-0 text-content relative gap-y-8 sm:gap-y-10 md:gap-y-0">
+
+      <!-- Para 1 -->
+      <p class="mb-4 sm:mb-6 pr-2 sm:pr-6 md:pr-10 
+                 text-[20px] sm:text-[24px] md:text-[28px] 
+                 leading-relaxed sm:leading-[1.8] md:leading-relaxed">
+        This is a must-read for kids—and anyone <br>
+        who’s ever wished they could hit "Undo" on <br>
+        an <span class="text-white font-bold">OUTBURST</span> (yes, that means you too, <br>
+        parents and teachers)!
+      </p>
+
+      <!-- Para 2 -->
+      <p class="mb-4 sm:mb-6 pr-4 sm:pr-10 text-white 
+                text-[20px] sm:text-[24px] md:text-[28px] 
+                leading-relaxed sm:leading-[1.8] md:leading-relaxed relative">
+        Loaded with
+        <span class="text-[#FF499C] font-bold relative inline-block">
+          HUMOR
+          <img src="images/scribble.png" alt="Scribble"
+            style="position: absolute; top: 47%; left: 270%; transform: translateY(-50%); width: 48px;"
+            class="pointer-events-none select-none z-10" />
+        </span>
+        for keeping <br>
+        your cool when the heat is on.
+      </p>
+
+      <!-- Para 3 -->
+      <p class="mt-2 sm:mt-4 md:mt-8 
+                text-[22px] sm:text-[28px] md:text-[32px] 
+                font-normal pr-4 sm:pr-8 leading-relaxed sm:leading-[1.8] md:leading-relaxed">
+        This book could just save your day <br>
+        and maybe a few <span class="text-white font-bold">FRIENDSHIPS!</span>
+      </p>
+
+      <!-- Bottom Star -->
+      <img src="images/star.png" alt="Star Bottom"
+        class="absolute bottom-[6%] right-[6%] w-[22px] sm:w-[30px] z-10" />
+    </div>
+
+    <!-- Right Side Image (Hidden on mobile) -->
+    <div class="hidden md:block md:w-1/2 h-full image-wrapper">
+      <img src="./images/dance.png" alt="Room with football boy"
+        class="w-full h-full object-cover object-center" />
+    </div>
+  </div>
+</div>
 
     
-        <!-- Left Text Content -->
-        <div
-          class="w-full md:w-1/2 flex-1 pt-24 sm:pt-28 md:pt-32 px-5 sm:px-8 md:px-12 pb-10 text-[#FF499C] text-[20px] sm:text-[24px] md:text-[28px] leading-relaxed flex flex-col justify-center z-0 text-content relative">
-    
-          <p class="mb-6 sm:mb-8 pr-2 sm:pr-6 md:pr-10 relative">
-            This is a must-read for kids—and anyone <br>
-            who’s ever wished they could hit "Undo" on <br>
-            an <span class="text-white font-bold">OUTBURST</span> (yes, that means you too, <br>
-            parents and teachers)!
-          </p>
-    
-          <p class="mb-6 sm:mb-8 pr-4 sm:pr-10 text-white relative">
-            Loaded with
-            <span class="text-[#FF499C] font-bold relative inline-block">
-              HUMOR
-              <img src="images/scribble.png" alt="Scribble"
-                style="position: absolute; top: 47%; left: 270%; transform: translateY(-50%); width: 48px;"
-                class="pointer-events-none select-none z-10" />
-            </span>
-            for keeping <br>
-            your cool when the heat is on.
-          </p>
-    
-          <p class="mt-4 sm:mt-6 md:mt-8 text-[26px] sm:text-[30px] md:text-[32px] font-normal pr-4 sm:pr-8">
-            This book could just save your day <br>
-            and maybe a few <span class="text-white font-bold">FRIENDSHIPS!</span>
-          </p>
-    
-          <!-- Bottom Star -->
-          <img src="images/star.png" alt="Star Bottom"
-            class="absolute bottom-[6%] right-[6%] w-[22px] sm:w-[30px] z-10" />
-        </div>
-    
-        <!-- Right Side Image -->
-        <div class="hidden md:block md:w-1/2 h-full image-wrapper">
-          <img src="./images/dance.png" alt="Room with football boy"
-            class="w-full h-full object-cover object-center" />
-        </div>
-      </div>
-    </div>
     
     <!-- SECTION 3: Just Say BANANA (Without Images) -->
     <div id="section3" class="section">
       <div class="peel"></div>
       <div class="w-full h-screen flex flex-col md:flex-row bg-yellow-400 font-['Gloria_Hallelujah'] relative overflow-hidden">
     
-        <!-- Left Side with Image (Now shifted left side) -->
+        <!-- Left Side Image (Visible only on desktop) -->
         <div class="hidden md:block md:w-1/2 h-full image-wrapper">
-          <img src="./images/hey.png" alt="Room with football boy"
-            class="w-full h-full object-cover object-center" />
+          <img src="./images/hey.png" alt="Room with football boy" class="w-full h-full object-cover object-center" />
         </div>
     
         <!-- Right Side: Text -->
@@ -300,7 +308,6 @@
     
           <!-- Decorative Stars -->
           <img src="images/star.png" class="absolute top-[5%] left-[6%] w-[28px] sm:w-[34px]" />
-          
           <img src="images/star.png" class="absolute bottom-[8%] right-[12%] w-[32px] sm:w-[40px]" />
           <img src="images/star.png" class="absolute bottom-[15%] left-[14%] w-[28px] sm:w-[34px]" />
           <img src="images/star.png" class="absolute top-[20%] left-[80%] w-[34px] sm:w-[40px]" />
@@ -310,28 +317,25 @@
             class="absolute top-[2vh] left-[2vw] w-[140px] sm:w-[180px] md:w-[200px] h-auto logo">
     
           <!-- Heading -->
-          <h1 class="relative mt-32 text-[28px] sm:text-[40px] md:text-[52px] lg:text-[60px] font-normal leading-tight text-white"
+          <h1
+            class="relative mt-28 text-[38px] sm:text-[42px] md:text-[52px] lg:text-[60px] font-normal leading-tight text-white"
             style="font-family: 'Gloria Hallelujah', cursive;">
-    
             <span class="relative inline-block">
               Just
-    
               <img src="images/highlight1.png" alt="Highlight"
-                class="absolute w-[24px] sm:w-[34px] md:w-[40px] -translate-y-[185%]  -translate-x-[85%] z-5 pointer-events-none select-none" />
+                class="absolute w-[28px] sm:w-[34px] md:w-[40px] -translate-y-[185%] -translate-x-[85%] z-5 pointer-events-none select-none" />
             </span>
-    
             say
-    
-            <span class="relative inline-block text-[#FFD900] font-bold text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px]">
+            <span
+              class="relative inline-block text-[#FFD900] font-bold text-[32px] sm:text-[34px] md:text-[36px] lg:text-[40px]">
               BANANA
-    
               <img src="images/banana3.png" alt="Banana3"
-                class="absolute w-[70px] sm:w-[100px] md:w-[120px] -translate-y-[60%] right-0 translate-x-1/2 z-5 pointer-events-none select-none" />
+                class="absolute w-[80px] sm:w-[100px] md:w-[120px] -translate-y-[60%] right-0 translate-x-1/2 z-5 pointer-events-none select-none" />
             </span>
           </h1>
     
           <!-- Description -->
-          <p class="mt-8 text-[16px] sm:text-[20px] md:text-[28px] leading-[1.5] text-[#FFD900]"
+          <p class="mt-12 text-[22px] sm:text-[24px] md:text-[28px] leading-[1.6] text-[#FFD900]"
             style="font-family: 'Gloria Hallelujah', cursive;">
             is a <span class="text-white">laugh-out-loud</span> book that hands you the
             <span class="text-white">silliest trick</span> for managing anger – so you
@@ -339,9 +343,9 @@
           </p>
     
           <!-- Callout Box -->
-          <div class="relative mt-8 px-6 sm:px-10 py-4 sm:py-5 bg-yellow-300 rounded-full shadow-md">
-            <img src="images/misc.png" alt="misc decoration" class="absolute -top-3 -left-3 w-[34px] sm:w-[44px]" />
-            <p class="text-[16px] sm:text-[20px] md:text-[24px] text-white tracking-tight"
+          <div class="relative mt-14 px-6 sm:px-10 py-4 sm:py-5 bg-yellow-300 rounded-full shadow-md">
+            <img src="images/misc.png" alt="misc decoration" class="absolute -top-3 -left-3 w-[36px] sm:w-[44px]" />
+            <p class="text-[22px] sm:text-[22px] md:text-[24px] text-white tracking-tight"
               style="font-family: 'Gloria Hallelujah', cursive;">
               like That’s it, I’m moving to the <span class="text-[#ff40a1] font-bold">MOON!</span>
             </p>
@@ -350,6 +354,9 @@
         </div>
       </div>
     </div>
+    
+    
+    
     
     
 
