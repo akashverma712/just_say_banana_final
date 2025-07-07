@@ -79,10 +79,20 @@
     
           <!-- Book Image -->
           <div class="w-full md:w-2/5 flex justify-center items-center md:pl-16">
-
-            <!-- 👆 Added md:pl-10 for extra left padding -->
-            <img src="./images/book1.png" alt="Book"
-              class="w-[60vw] max-w-[400px] min-w-[180px] sm:max-w-[350px] md:max-w-[400px] h-auto max-h-[300px] sm:max-h-[380px] md:max-h-[none] drop-shadow-xl transition-all duration-500 ease-in-out book" />
+            <div class="relative group" id="book-container">
+    
+              <!--  Anchor tag for future link -->
+              <a href="#" id="bookLink" class="block">
+                <img src="./images/book1.png" alt="Book"
+                  class="w-[60vw] max-w-[400px] min-w-[180px] sm:max-w-[350px] md:max-w-[400px] h-auto max-h-[300px] sm:max-h-[380px] md:max-h-[none] drop-shadow-xl transition-all duration-500 ease-in-out book" />
+              </a>
+    
+              <!-- Floating Button-like Text -->
+              <div id="floating-text"
+              class="pointer-events-none absolute left-0 top-0 hidden z-20 bg-pink-400 text-white text-[14px] sm:text-[16px] px-4 sm:px-6 py-1 sm:py-1.5 rounded-full border-2 border-white font-semibold shadow-md transition duration-200 ease-in-out">
+              Click to Preview
+            </div>
+            </div>
           </div>
     
           <!-- Text & CTA -->
@@ -130,6 +140,7 @@
     
       </div>
     </div>
+
     
 
 

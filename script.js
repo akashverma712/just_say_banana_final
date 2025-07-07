@@ -547,3 +547,20 @@ window.addEventListener('touchend', (e) => {
     flipPrev();
   }
 });
+
+const bookContainer = document.getElementById("book-container");
+const floatingText = document.getElementById("floating-text");
+
+bookContainer.addEventListener("mousemove", (e) => {
+  const rect = bookContainer.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  floatingText.style.left = `${x + 10}px`;
+  floatingText.style.top = `${y + 10}px`;
+  floatingText.classList.remove("hidden");
+});
+
+bookContainer.addEventListener("mouseleave", () => {
+  floatingText.classList.add("hidden");
+});
