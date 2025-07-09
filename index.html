@@ -252,8 +252,10 @@
       class="absolute top-[0.1%] left-[3%] sm:top-0 sm:left-6 w-[140px] sm:w-[180px] md:w-[200px] h-auto logo pointer-events-auto" />
 
     <!-- Text Content -->
-    <div
-      class="w-full md:w-1/2 flex-1 pt-24 sm:pt-28 md:pt-32 px-5 sm:px-8 md:px-12 pb-10 text-[#FF499C] flex flex-col justify-center z-0 text-content relative gap-y-8 sm:gap-y-10 md:gap-y-0">
+   <!-- Text Content -->
+<div
+class="w-full md:w-1/2 flex-1 pt-24 sm:pt-28 md:pt-32 px-5 sm:px-8 md:px-12 pb-10 text-[#FF499C] flex flex-col justify-center z-0 text-content relative gap-y-8 sm:gap-y-10 md:gap-y-0 text-left">
+
 
       <!-- Para 1 -->
       <p class="mb-4 sm:mb-6 pr-2 sm:pr-6 md:pr-10 
@@ -266,15 +268,15 @@
       </p>
 
       <!-- Para 2 -->
-      <p class="mb-4 sm:mb-6 pr-4 sm:pr-10 text-white 
+      <p class="mb-4 sm:mb-6 pr-4 sm:pr-10 text-[#FF499C]
                 text-[20px] sm:text-[24px] md:text-[28px] 
                 leading-relaxed sm:leading-[1.8] md:leading-relaxed relative">
         Loaded with
-        <span class="text-[#FF499C] font-bold relative inline-block">
+        <span class="text-white font-bold relative inline-block">
           HUMOR
           <img src="images/scribble.png" alt="Scribble"
             style="position: absolute; top: 47%; left: 270%; transform: translateY(-50%); width: 48px;"
-            class="pointer-events-none select-none z-10" />
+            class="text-[#FF499C] pointer-events-none select-none z-10" />
         </span>
         for keeping <br>
         your cool when the heat is on.
@@ -310,7 +312,8 @@
     
         <!-- Left Side Image (Visible only on desktop) -->
         <div class="hidden md:block md:w-1/2 h-full image-wrapper">
-          <img src="./images/hey.png" alt="Room with football boy" class="w-full h-full object-cover object-center" />
+          <img src="./images/hey.png" alt="..." class="w-full h-full object-cover object-[center_5%]" />
+
         </div>
     
         <!-- Right Side: Text -->
@@ -508,12 +511,13 @@
           </div>
 
 
-          <div
-            class="text-yellow-300 text-[18px] sm:text-[26px] md:text-[36px] leading-snug mt-10 font-['Gloria_Hallelujah'] px-4 sm:px-8 max-w-[90%]">
-            <p>Your temperature is <span class="text-white font-bold">RISING</span>,</p>
-            <p>your heart is pounding,</p>
-            <p>and you’re this close to saying something you don’t really mean!</p>
-          </div>
+       <div
+  class="text-yellow-300 text-[18px] sm:text-[26px] md:text-[36px] leading-snug mt-10 font-['Gloria_Hallelujah'] px-4 sm:px-8 max-w-[90%]">
+  <p>Your temperature is <span class="text-white font-bold">RISING</span>, your heart is pounding,</p>
+  <p>and you’re this close to</p>
+  <p>saying something you don’t really mean!</p>
+</div>
+
         </div>
       </div>
     </div>
